@@ -1,0 +1,11 @@
+#! /bin/sh
+
+################################################
+# Open Github.com Pull Requests listing page
+# for this Scoop git repo
+################################################
+
+ghpath=$(githubpath)
+
+url="https://github.com/$ghpath/pulls"
+open $url

@@ -1,0 +1,8 @@
+#! /bin/sh
+
+################################################
+# Hard reset git on origin branch of same name
+################################################
+
+brname=$(git rev-parse --abbrev-ref HEAD)
+git reset --hard origin/$brname

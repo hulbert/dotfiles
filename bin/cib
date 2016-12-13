@@ -1,0 +1,13 @@
+#! /bin/sh
+
+################################################
+# Open CircleCI for this Scoop git repo, on the 
+# current branch
+################################################
+
+origin=$(git remote get-url origin)
+ghpath=$(githubpath)
+brname="$(git symbolic-ref --short HEAD)"
+
+url="https://circleci.com/gh/$ghpath/tree/$brname"
+open $url

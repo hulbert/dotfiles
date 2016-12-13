@@ -1,0 +1,10 @@
+#! /bin/sh
+
+################################################
+# Open CircleCI for this repo based on Github origin
+################################################
+origin=$(git remote get-url origin)
+ghpath=$(githubpath)
+
+url="https://circleci.com/gh/$ghpath"
+open $url

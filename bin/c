@@ -1,0 +1,9 @@
+#! /bin/sh
+
+################################################
+# Trim and copy to your clipboard
+# Useful for things like `guid | c`
+################################################
+trimmed=`cat | tr -d '\n'`
+echo -n $trimmed | pbcopy
+echo "$trimmed"

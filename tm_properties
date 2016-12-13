@@ -1,0 +1,23 @@
+windowTitle = '${TM_FILEPATH:?${TM_FILEPATH/${projectDirectory}.//}:$TM_DISPLAYNAME} $windowTitleSCM'
+include = "{$include,.*}"
+exclude = "{$exclude,.git,.DS_Store}"
+excludeInFolderSearch = "{$excludeInFolderSearch,bower_components,node_modules,venv}"
+excludeInFileChooser = "{$excludeInFileChooser,$excludeInFolderSearch}"
+
+[*.csv]
+scopeAttributes = attr.keep-whitespace
+
+[*.yaml]
+scopeAttributes = attr.keep-whitespace
+
+[*.yaml]
+scopeAttributes = attr.keep-whitespace
+
+[*.txt]
+scopeAttributes = attr.keep-whitespace
+
+[*.md]
+scopeAttributes = attr.keep-whitespace
+
+[*.raml]
+scopeAttributes = attr.keep-whitespace

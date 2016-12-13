@@ -1,0 +1,12 @@
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# srclib build cache
+.srclib-cache/
+
+.tm_properties

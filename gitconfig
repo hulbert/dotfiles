@@ -1,0 +1,36 @@
+[core]
+	excludesfile = ~/dotfiles/gitignore
+	# pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	brs = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+	brn = symbolic-ref --short HEAD
+	brc = rev-parse --abbrev-ref HEAD
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+[user]
+	name = Scott Hulbert
+	email = scott@scotthulbert.com
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = deltawalker
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	keepBackup = false
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[push]
+	default = current
+[rerere]
+	enabled = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

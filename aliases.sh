@@ -22,7 +22,6 @@ alias guid='uuidgen | tr "[:upper:]" "[:lower:]"'
 alias brs='git brs | tail'
 alias gg='git difftool'
 alias ggg='git difftool HEAD'
-alias grh='git reset --hard origin/master'
 
 # Switch directories
 pbr() {

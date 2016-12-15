@@ -1,0 +1,13 @@
+#! /bin/sh
+
+################################################
+# Open Github.com Pull Request creation page
+# for this Scoop git repo 
+# (also lets you compare branches to master)
+################################################
+set -e
+
+ghpath=$(githubpath)
+
+url="https://github.com/$ghpath"
+open $url

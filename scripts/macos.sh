@@ -14,7 +14,7 @@ if ! brew ls --versions coreutils > /dev/null; then
 fi
 
 if [ ! -e ~/.tm_properties ]; then
-    ln -s ~/dotfiles/tm_properties ~/.tm_properites
+    ln -s ~/dotfiles/tm_properties ~/.tm_properties
 fi
 
 if [ ! -e ~/.gitconfig ]; then

@@ -32,3 +32,6 @@ pbr() {
   
   cd ~/src/piggyback/$1
 }
+
+# go to this directory
+alias dot='cd ~/dotfiles'

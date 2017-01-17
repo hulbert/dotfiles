@@ -1,0 +1,13 @@
+#! /bin/sh
+
+################################################
+# Print out a specified number of UUIDs
+################################################
+
+if (( $# != 1 ))
+then
+  echo "Invalid arguments\n\nUsage: guids <int>"
+  exit 1
+fi
+
+for i in $(seq 1 $1) ; do uuidgen | tr '[:upper:]' '[:lower:]'; done

@@ -10,3 +10,8 @@ export PATH="$DOTFILES_BIN:$PATH"
 
 # add Postgres.app so we can use psql
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+
+if [ -e "$HOME/go/bin" ]; then
+    export PATH="$PATH:$HOME/go/bin"
+fi

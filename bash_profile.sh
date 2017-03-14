@@ -3,6 +3,7 @@ DIR=$(dirname $BASH_SOURCE)
 
 source $DIR/bash_prompt.sh
 source $DIR/aliases.sh
+source $DIR/functions.sh
 source $DIR/completion.sh
 source $DIR/path.sh
 

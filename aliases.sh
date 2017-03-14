@@ -23,15 +23,5 @@ alias brs='git brs | tail'
 alias gg='git difftool'
 alias ggg='git difftool HEAD'
 
-# Switch directories
-pbr() {
-  if [[ -z $1 ]]; then
-    cd ~/src/piggyback && ls
-    return
-  fi
-  
-  cd ~/src/piggyback/$1
-}
-
 # go to this directory
 alias dot='cd ~/dotfiles'

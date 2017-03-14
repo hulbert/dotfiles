@@ -1,8 +1,11 @@
 #! /bin/sh
 
 ################################################
-# Open CircleCI for this Scoop git repo, on the 
-# current branch
+# Open CircleCI for the git repo in the current
+# directory, on the current branch
+# 
+# Assumes a github URL is configured as the
+# origin for said repo
 ################################################
 
 origin=$(git remote get-url origin)

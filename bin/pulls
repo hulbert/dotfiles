@@ -2,7 +2,7 @@
 
 ################################################
 # Open Github.com Pull Requests listing page
-# for this Scoop git repo
+# for the current git repo
 ################################################
 
 ghpath=$(githubpath)

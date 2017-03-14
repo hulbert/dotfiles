@@ -5,6 +5,8 @@
 # 
 # This extracts the Github 'org/project' path
 # from using the local git repo's remote origin
+# 
+# Works only with SSH URLs
 ################################################
 
 origin=$(git remote get-url origin)

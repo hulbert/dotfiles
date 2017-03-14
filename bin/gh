@@ -1,9 +1,7 @@
 #! /bin/sh
 
 ################################################
-# Open Github.com Pull Request creation page
-# for this Scoop git repo 
-# (also lets you compare branches to master)
+# Open Github.com repo page for the current repo
 ################################################
 set -e
 

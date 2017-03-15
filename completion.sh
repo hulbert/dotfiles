@@ -3,3 +3,4 @@ if [ -e /usr/local/bin/aws_completer ]; then
 fi
 
 source $DIR/vendor/git-completion.bash
+source $DIR/vendor/npm-completion.bash

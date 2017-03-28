@@ -1,5 +1,6 @@
 [core]
 	excludesfile = ~/dotfiles/gitignore
+	editor = mate -w
 	# pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
 [alias]
 	st = status

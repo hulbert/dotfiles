@@ -11,6 +11,9 @@ export PATH="$DOTFILES_BIN:$PATH"
 # add Postgres.app so we can use psql
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
+if [ -e "$HOME/Library/Python/2.7/bin" ]; then
+    export PATH="$PATH:$HOME/Library/Python/2.7/bin"
+fi
 
 if [ -e "$HOME/go/bin" ]; then
     export PATH="$PATH:$HOME/go/bin"

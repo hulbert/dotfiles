@@ -23,5 +23,8 @@ alias brs='git brs | tail'
 alias gg='git difftool'
 alias ggg='git difftool HEAD'
 
+# node.js REPL
+alias ns='node --use-strict'
+
 # go to this directory
 alias dot='cd ~/dotfiles'

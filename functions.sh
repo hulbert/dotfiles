@@ -22,7 +22,7 @@ new-node() {
   npm init -f
   perl -pi -e '$_ .= qq(  "private": true,\n) if /"description":/' package.json
   npm install --save -E bluebird csv lodash yargs 
-  npm install --save-dev @scoop/eslint-config-scoop eslint@2 eslint-plugin-require-path-exists
+  npm install --save-dev @scoop/eslint-config-scoop eslint@3 eslint-plugin-dependencies@2
   echo -e 'node_modules/' > .gitignore
   echo -e '{\n    "extends": "@scoop/eslint-config-scoop"\n}' > .eslintrc.json
   git init

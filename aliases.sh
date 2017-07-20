@@ -22,6 +22,7 @@ alias guid='uuidgen | tr "[:upper:]" "[:lower:]"'
 alias brs='git brs | tail'
 alias gg='git difftool'
 alias ggg='git difftool HEAD'
+alias gp='git push'
 
 # node.js REPL
 alias ns='node --use-strict'

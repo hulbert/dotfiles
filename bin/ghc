@@ -1,0 +1,13 @@
+#! /bin/sh
+
+################################################
+# Open Github.com Pull Request creation page
+# for the current repo 
+################################################
+set -e
+
+brname="$(git symbolic-ref --short HEAD)"
+ghpath=$(githubpath)
+
+url="https://github.com/$ghpath/compare/$brname"
+open $url

@@ -1,0 +1,11 @@
+#! /bin/sh
+
+##################################################
+# Open Github.com issues page for the current repo
+##################################################
+set -e
+
+ghpath=$(githubpath)
+
+url="https://github.com/$ghpath/issues"
+open $url

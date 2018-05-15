@@ -18,3 +18,8 @@ fi
 if [ -e "$HOME/go/bin" ]; then
     export PATH="$PATH:$HOME/go/bin"
 fi
+
+# if [ -e "/anaconda/bin" ]; then
+#     export PATH="/anaconda/bin:$PATH"
+# fi
+

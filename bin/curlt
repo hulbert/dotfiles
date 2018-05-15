@@ -22,7 +22,8 @@ curl_format='{
   "time_pretransfer": %{time_pretransfer},
   "time_redirect": %{time_redirect},
   "time_starttransfer": %{time_starttransfer},
-  "time_total": %{time_total}
+  "time_total": %{time_total},
+  "redirect_url": "%{redirect_url}"
 }\n'
 
-exec curl --compressed -w "$curl_format" -o /dev/null -s "$@"
+exec curl --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36" --compressed -w "$curl_format" -o /dev/null -s "$@"

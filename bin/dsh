@@ -1,0 +1,13 @@
+#! /bin/sh
+
+################################################
+# Open a shell in a running Docker container
+# by providing the process name
+# 
+# e.g. `dsh postgres`
+################################################
+
+PS_NAME=$1
+PS_ID=$(docker ps --filter "name=$PS_NAME" -q)
+
+docker exec -it $PS_ID /bin/bash

@@ -23,3 +23,7 @@ fi
 #     export PATH="/anaconda/bin:$PATH"
 # fi
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/usr/local/lib/google-cloud-sdk/path.bash.inc' ]; then
+    source '/usr/local/lib/google-cloud-sdk/path.bash.inc'
+fi

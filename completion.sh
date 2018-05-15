@@ -7,3 +7,7 @@ fi
 
 source $DIR/vendor/git-completion.bash
 source $DIR/vendor/npm-completion.bash
+
+if [ -f '/usr/local/lib/google-cloud-sdk/completion.bash.inc' ]; then
+    source '/usr/local/lib/google-cloud-sdk/completion.bash.inc';
+fi

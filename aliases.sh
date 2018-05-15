@@ -30,3 +30,6 @@ alias ns='node --use-strict'
 
 # go to this directory
 alias dot='cd ~/dotfiles'
+
+# formatting
+alias pbj='pbpaste | jq . | tee /dev/tty | pbcopy'

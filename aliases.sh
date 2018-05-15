@@ -17,6 +17,7 @@ alias lab='open https://github.com/hapijs/lab/blob/master/README.md'
 
 # better built-ins
 alias guid='uuidgen | tr "[:upper:]" "[:lower:]"'
+alias unixtime='date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s"'
 
 # git related
 alias brs='git brs | tail'

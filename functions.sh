@@ -1,15 +1,15 @@
 # for things that don't work as aliases and scripts (i.e. need to run in the *current* shell)
 
-# Switch directories
-pbr() {
-  if [[ -z $1 ]]; then
-    cd ~/src/piggyback && ls
-    return
-  fi
-  
-  cd ~/src/piggyback/$1
+function pbr(){
+   cd ~/src/piggyback/$1
 }
 
+function _pbr(){
+    local cur=${COMP_WORDS[COMP_CWORD]};
+    COMPREPLY=( $(compgen -W "$(/bin/ls ~/src/piggyback/)" -- $cur));
+}
+
+complete -o nospace -F _pbr pbr
 
 new-node() {
   if [[ -z $1 ]]; then

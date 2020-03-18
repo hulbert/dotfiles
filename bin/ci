@@ -7,5 +7,5 @@
 origin=$(git remote get-url origin)
 ghpath=$(githubpath)
 
-url="https://circleci.com/gh/$ghpath"
+url="https://app.circleci.com/pipelines/github/$ghpath/mine"
 open $url

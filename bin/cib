@@ -12,5 +12,6 @@ origin=$(git remote get-url origin)
 ghpath=$(githubpath)
 brname="$(git symbolic-ref --short HEAD)"
 
-url="https://circleci.com/gh/$ghpath/tree/$brname"
+url="https://app.circleci.com/pipelines/github/$ghpath?branch=$brname"
 open $url
+

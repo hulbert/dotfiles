@@ -1,0 +1,22 @@
+#! /bin/sh
+
+################################################
+# Truncate clipboard to 7 characters, i.e.
+# to shorten a git commit sha to the conventional
+# shortening length
+################################################
+set -e
+
+clipboard=$(pbpaste)
+regex="^[a-fA-F0-9]{40}$"
+
+if [[ $clipboard =~ ${regex} ]]; then
+    echo "Shortening git hash:\n\t$clipboard"
+    echo "Shortened and copied to clipboard:"
+    echo "$clipboard" | cut -c -7 | tee /dev/tty | pbcopy
+else
+    echo "Sorry, your clipboard is not a valid sha1 hash:\n\t$clipboard"
+    exit 1
+fi
+#
+# echo "$clipboard" | cut -c -7 | tee /dev/tty | pbcopy

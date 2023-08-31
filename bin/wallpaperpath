@@ -1,0 +1,7 @@
+#! /bin/sh
+
+################################################
+# Print path of current desktop wallpaper
+################################################
+
+osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)'

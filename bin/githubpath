@@ -10,4 +10,4 @@
 ################################################
 
 origin=$(git remote get-url origin)
-echo $origin | python -c "import sys; url = sys.stdin.readlines()[0].strip(); print url.split(':')[1][:-4]" | cat
+echo $origin | python3 -c "import sys; url = sys.stdin.readlines()[0].strip(); print(url.split(':')[1][:-4])" | cat
